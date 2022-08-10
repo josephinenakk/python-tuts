@@ -1,42 +1,62 @@
+python_batch_details = [
+    ["x","y",10,["z","a","b"],["masters"]],
+    ["x","y",10,["z","a","b"],["masters"]],
+    ["x","y",10,["z","a","b"],["masters"]],
 
-list_variable = ["apple","bat","cat","dog"]
+]
 
-list_variable.append("elephant")
+fourth_person_details = ["x","y",8,["rick","john","yes"],["masters"]]
 
-print (list_variable)
 
-new_list_variable = list_variable.copy()
 
-print (new_list_variable)
+# pybde = [[],[],[],3,False]
 
-print (list_variable.count("cat"))
+python_batch_details.append(fourth_person_details)
+python_batch_details.append(4)
+python_batch_details.append(True)
 
-list_variable.extend(["fan","goat"])
-print (list_variable)
+python_batch_details.insert(0,"Instructor")
 
-print (list_variable.index("goat"))
+python_batch_details.insert(1,"Python")
 
-list_variable.insert(1,"ball")
+instructor_details = ["instructor","asdf",[],[]]
 
-print (list_variable)
+# instructor_details.insert(2,20)
 
-list_variable.pop(2)
-print (list_variable)
+python_batch_details.insert(2,instructor_details)
 
-list_variable.remove("ball")
+python_batch_details[2].insert(2,20)
 
-print (list_variable)
+python_batch_details[3][3].insert(1,"Rick")
 
-list_variable.reverse()
-print (list_variable)
+# day - 8 
+python_batch_details[0] = "This list is about the Python class Details" 
 
-list_variable.sort()
-print (list_variable)
+python_batch_details.extend(["8:30PM to 10:00PM EST"])
 
-list_variable[1] = "ant"
-print (list_variable)
+python_batch_details.extend([["8:30PM to 10:00PM EST","6:00AM to 7:30PM IST"]])
 
-list_variable[2:4] = ["bank","car"]
-print (list_variable)
+print (python_batch_details.index(instructor_details))
+
+python_batch_details.reverse()
+
+python_batch_details.pop()
+python_batch_details.pop(1)
+
+
+
+python_batch_details[0:2] = ["sample value"]
+# python_batch_details[0:] = ["sample value"]
+
+another_python_batch_details_variable = python_batch_details.copy()
+
 
 print ([1,2,3,4]+[5,6,7])
+
+# please ignore this following code ------------
+for index,list_element in enumerate(python_batch_details):
+    print (f" INDEX = {index}, LIST ELEMENT = {list_element} \n")
+# --------------- end of code -----
+
+print (another_python_batch_details_variable)
+
